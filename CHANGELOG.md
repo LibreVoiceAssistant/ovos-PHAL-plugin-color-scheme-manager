@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-color-scheme-manager/tree/HEAD)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-color-scheme-manager/compare/V1.0.0a3...HEAD)
+
+**Merged pull requests:**
+
+- add a get method for getting current theme color scheme [\#2](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-color-scheme-manager/pull/2) ([AIIX](https://github.com/AIIX))
+
+## [V1.0.0a3](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-color-scheme-manager/tree/V1.0.0a3) (2022-10-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-color-scheme-manager/compare/V1.0.0a2...V1.0.0a3)
+
 ## [V1.0.0a2](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-color-scheme-manager/tree/V1.0.0a2) (2022-08-10)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-color-scheme-manager/compare/222684b4ef0d8c8c0257e74d37732413a6c0f1fc...V1.0.0a2)
