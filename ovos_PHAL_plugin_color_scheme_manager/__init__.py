@@ -47,8 +47,6 @@ class ColorSchemeManager(PHALPlugin):
         self.bus.emit(Message("ovos.shell.gui.color.scheme.generated",
                               {"theme_name": theme_name,
                                "theme_path": self.theme_path}))
-        # Emit theme change for any plugins
-        self.provide_theme(Message("ovos.theme.get"))
         
     def provide_theme(self, message):
         file_name = "OvosTheme"
