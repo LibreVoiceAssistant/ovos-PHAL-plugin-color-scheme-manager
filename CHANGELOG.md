@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-color-scheme-manager/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-color-scheme-manager/compare/V1.0.0a3...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-color-scheme-manager/compare/V1.0.0a4...HEAD)
+
+**Merged pull requests:**
+
+- Emit theme on plugin init and theme generation [\#3](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-color-scheme-manager/pull/3) ([NeonDaniel](https://github.com/NeonDaniel))
+
+## [V1.0.0a4](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-color-scheme-manager/tree/V1.0.0a4) (2022-11-07)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-color-scheme-manager/compare/V1.0.0a3...V1.0.0a4)
 
 **Merged pull requests:**
 
