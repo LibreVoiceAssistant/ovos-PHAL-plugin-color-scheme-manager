@@ -6,6 +6,7 @@ from ovos_plugin_manager.phal import PHALPlugin
 from ovos_utils.log import LOG
 from ovos_utils.xdg_utils import xdg_data_home, xdg_config_home
 
+
 class ColorSchemeManager(PHALPlugin):
 
     def __init__(self, bus=None, config=None):
@@ -13,6 +14,9 @@ class ColorSchemeManager(PHALPlugin):
         self.theme_path = join(xdg_data_home(), "OVOS", "ColorSchemes")
         self.bus.on("ovos.shell.gui.color.scheme.generate", self.generate_theme)
         self.bus.on("ovos.theme.get", self.provide_theme)
+
+        # Emit theme on init
+        self.provide_theme(Message("ovos.theme.get"))
 
     def generate_theme(self, message):
         if "primaryColor" not in message.data or "secondaryColor" not in message.data or "textColor" not in message.data:
@@ -40,7 +44,9 @@ class ColorSchemeManager(PHALPlugin):
         theme_file.write('"textColor":"' + message.data["textColor"] + '"\n')
         theme_file.write("}\n")
         theme_file.close()
-        self.bus.emit(Message("ovos.shell.gui.color.scheme.generated", {"theme_name": theme_name, "theme_path": self.theme_path}))
+        self.bus.emit(Message("ovos.shell.gui.color.scheme.generated",
+                              {"theme_name": theme_name,
+                               "theme_path": self.theme_path}))
         
     def provide_theme(self, message):
         file_name = "OvosTheme"
@@ -60,7 +66,10 @@ class ColorSchemeManager(PHALPlugin):
             secondaryColor = re.search(r"secondaryColor=(.*)", theme).group(1)
             textColor = re.search(r"textColor=(.*)", theme).group(1)
             
-            self.bus.emit(message.response({"name": name, "primaryColor": primaryColor, "secondaryColor": secondaryColor, "textColor": textColor}))
+            self.bus.emit(message.response({"name": name,
+                                            "primaryColor": primaryColor,
+                                            "secondaryColor": secondaryColor,
+                                            "textColor": textColor}))
             
         except Exception as e:
             LOG.error(e)
