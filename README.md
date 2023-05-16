@@ -1,5 +1,9 @@
-# OVOS PHAL Color Scheme Plugin
+# DEPRECATED - OVOS PHAL Color Scheme Plugin
 
+
+This repository is no longer maintained by OpenVoiceOS, use https://github.com/OpenVoiceOS/ovos-gui-plugin-shell-companion instead
+
+___________________________
 The Dashboard PHAL plugin provides a middle layer interface between OVOS Shell and OVOS Core to set and manage color schemes. This interface is used for theme generaation feature and theme setting feature
 
 # Requirements
