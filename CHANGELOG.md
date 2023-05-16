@@ -1,5 +1,9 @@
 # Changelog
 
+## [V1.0.1a1](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-color-scheme-manager/tree/V1.0.1a1) (2023-04-04)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-color-scheme-manager/compare/V1.0.0...V1.0.1a1)
+
 ## [V1.0.0](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-color-scheme-manager/tree/V1.0.0) (2022-11-10)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-color-scheme-manager/compare/V1.0.0a5...V1.0.0)
